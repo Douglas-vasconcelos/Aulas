@@ -1,52 +1,141 @@
-body {
-    
-}
-
-#banner {
-    width: 100%;
-}
-
-.principal {
+header {
     background: #CCCCCC;
-    padding: 30px;
+    padding: 20px 0;
 }
 
-.titulo-principal {
-    padding-left: 30px;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-.titulo-centralizado {
-    text-align: center;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-p {
-    text-align: center;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-#missao {
-    font-size: 20px;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-em strong {
-    color: #FF0000;
+nav a:hover {
+    color: goldenrod;
+    text-decoration: underline;
 }
 
-.itens {
-    font-style: italic;
+.produto {
+    width: 940px;
+    margin: 0 Auto;
+    padding: 50px 0;
 }
 
-.beneficios {
-    background: #FFFFFF;
-    padding: 20px;
-}
-
-ul {
+.produto li {
     display: inline-block;
+    text-align: center;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box; 
+    border: 2px solid #000000;
+    border-radius: 10px;
 }
 
-.imagembeneficios {
+.produto li:hover {
+    border-color: goldenrod;
+}
+
+.produto li:active {
+    border-color: green;
+
+}
+
+.produto li:hover h2 {
+    font-size: 34px;
+}
+
+.produto-preco:hover {
+    font-size: 30px;
+}
+
+.produto h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.produto-descricao {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 30px 0 0;
+    font-weight: bold; 
+}
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao {
+    display: block;
+    margin: 0 0 10px;
+    padding: 10px 25px;
     width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    border: none;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: orangered;
+    transform: scale(1.2)
 }
